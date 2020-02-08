@@ -75,8 +75,6 @@ nav {
   text-align: left;
   /*Your code here*/
   /*Span the top row*/
-  grid-column: 1/ -1;
-  grid-row: 1/ span 1;
 }
 
 header {
@@ -93,9 +91,7 @@ header {
   /* Parallax effect */
   /* Your code here */
   /* Set background-image to header.jpg in the images folder */
-  background-image: url("image/header.jpg");
   /* Span one row */
-  grid-row: 2/ span 1;
 }
 
 header p {
@@ -108,10 +104,6 @@ header p {
 .container {
   /*Your code here  */
   /* See documentation for mobile view */
-  display: grid;
-  grid-template-columns: 100px 400px 100px;
-  grid-template-rows: 30px auto auto auto auto auto 100px;
-  grid-row-gap: 15px;
 }
 
 .about, .method, .clients, .contact {
@@ -151,12 +143,6 @@ header p {
   /*Your code here:*/
   /*Align the content in the center */
 }
-
-/* ===============================================================*/
-
-/* ===============================================================*/
-
-/* The following is for the desktop view*/
 
 @media all and (min-width: 800px) {
   .container {
