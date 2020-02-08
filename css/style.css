@@ -45,7 +45,8 @@ nav a:hover {
   z-index: 1;
   /*Your code here - position relative to the parent */
   /*Your code here - place 40px higher */
-  ;
+  position: absolute;
+  top: -40px;
 }
 
 /*Your code here*/
@@ -54,6 +55,15 @@ nav a:hover {
 link to the exact top of the page.*/
 
 /*Your code here*/
+
+.skip a:focus {
+  top: 0px;
+}
+
+.skip a:focus, nav a:focus {
+  border: 2px solid black;
+  outline: none;
+}
 
 /*Add the selector and code to put a 2px black 
 border around all elements in focus.*/
@@ -166,6 +176,8 @@ header p {
   .container {
     /*Your code here */
     /* See documentation for desktop view */
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
   }
   nav {
     background-color: #ddd;
@@ -176,10 +188,12 @@ header p {
   .about, .clients, .method-image, .contact-image {
     /*Your code here */
     /* See documentation for desktop view */
+    grid-column: 3 /span 2;
   }
   .about-image, .clients-image, .method, .contact {
     /*Your code here */
     /* See documentation for desktop view */
+    grid-column: 2 /span 2;
   }
 }
 
